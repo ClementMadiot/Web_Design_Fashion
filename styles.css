@@ -1,26 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-:root{
+/*/ General rules  /*/
+:root {
   --primary-color: #b32557;
   --white: #ffffff;
   --max-width: 1200px;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: "Fredoka", sans-serif;
+body {
+  font-family: 'Fredoka', sans-serif;
   min-height: 100vh;
   background-image: url(assets/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  /* color: var(--white); */
+}
+h1 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px var(--white);
+}
+h1,
+h2 {
+  font-size: 4rem;
+  color: var(--white);
+  line-height: 4rem;
 }
 
-.container{
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+}
+li {
+  text-transform: uppercase;
+}
+
+/*/ Nav section  /*/
+
+.container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,36 +52,39 @@ body{
   margin: auto;
 }
 
-nav{
+nav {
   padding: 2rem 1rem;
   overflow: hidden;
 }
 
-.nav_links{
+.nav_links {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
-  color: var(--white);
+  /* color: var(--white); */
 }
 
-.nav_links > div li:not(:first-child){
+.nav_links > div li:not(:first-child) {
   display: none;
 }
 .nav_links img {
   max-width: 50px;
 }
-.nav_links a {
-  max-width: 50px;
+
+.nav_links li {
+  /* nav_links a  */
+  position: relative;
   isolation: isolate;
   padding-bottom: 10px;
   text-decoration: none;
   font-weight: 500;
-  /* color: var(--white); */
+  color: var(--white);
 }
 
-.nav_links a::after{
+.nav_links li::after {
+  /* nav_links a::after */
   position: absolute;
   content: '';
   bottom: 0;
@@ -68,12 +95,53 @@ nav{
   transition: 0.3s;
 }
 
-.nav_links a::hover::after{
+.nav_links li::hover::after {
+  /* nav_links a::hover::after */
   width: 100%;
 }
 
-@media (width > 768px){
-  .nav_links > div li:not(:first-child){
+/*/ Title section  /*/
+.section_container {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section_container button {
+  max-width: fit-content;
+  margin-block: 5rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--white);
+  cursor: pointer;
+}
+.section_container button span {
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+@media (width > 540px){
+  h1,h2{
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+  }
+}
+
+@media (width > 768px) {
+  .nav_links > div li:not(:first-child) {
     display: block;
   }
 
@@ -82,5 +150,8 @@ nav{
     align-items: center;
     gap: 2rem;
   }
+  h1, h2{
+    font-size: 7rem;
+    line-height: 7rem;
+  }
 }
-
