@@ -1,12 +1,8 @@
 # CSS
 
-
-not repeat class
-h1/h2/h3
-
-add annimation ancre footer
-
-delete logo underline
+add annimation:
+- ancre footer 
+- button
 
 # Files
 optimization of the img
