@@ -71,10 +71,10 @@ nav {
   justify-content: space-between;
   gap: 2rem;
 }
-
 .nav_links > div li:not(:first-child) {
   display: none;
 }
+
 .nav_links img {
   max-width: 50px;
 }
@@ -261,18 +261,19 @@ footer .socials a:hover {
     font-size: 5.5rem;
     line-height: 5.5rem;
   }
-}
-
-@media (width > 768px) {
-  .nav_links .logo li:not(:first-child) {
+  .nav_links > div li:not(:first-child)  {
     display: block;
   }
-
+  
   .nav_links div {
     display: flex;
     align-items: center;
     gap: 2rem;
   }
+}
+
+@media (width > 768px) {
+
   h1,
   h2 {
     font-size: 7rem;
