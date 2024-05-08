@@ -32,7 +32,6 @@ h1,
 h2 {
   font-size: 4rem;
   line-height: 4rem;
-  margin: 1rem 0;
 }
 
 h3 {
@@ -125,31 +124,24 @@ nav {
   margin-block: 4rem;
   outline: none;
   border: 2px solid var(--white);
+  font-size: 1.3rem;
+  padding: 1rem;
   cursor: pointer;
 }
 
-.title_section a {
-  display: flex;
-  align-items: center;
-  color: var(--white);
-  background: transparent;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-}
-
-.title_section a:focus {
+.title_section button:focus {
   outline: none;
 }
 
-.title_section a:hover {
+.title_section button:hover {
   transition: 0.5s;
 }
 
-.title_section a span:nth-child(2) {
+.title_section button span:nth-child(2) {
   transition: 0.5s;
 }
 
-.title_section a:hover span:nth-child(2) {
+.title_section button:hover span:nth-child(2) {
   transition: 0.5s;
   margin-right: 1.5rem;
 }
