@@ -1,12 +1,12 @@
 # Web_Design_Fashion
 
-The website is a loading page serves as a captivating platform for showcasing the stunning world of fashion photography. I use the Librairy Javascript, ScrollReveal to add a touch of dynamism, gracefully unveiling each component as users load the site.
+The website is a loading page serves as a captivating platform for showcasing the stunning world of fashion photography. I use the Library Javascript, ScrollReveal to add a touch of dynamism, gracefully unveiling each component as users load the site.
 
 The loading page is completely responsive
 
-## Librairy ScrollReveal
+## Library ScrollReveal
 
-I use the Librairy ScrollReveal for all my smooth animations on the loading web pages
+I use the Library ScrollReveal for all my smooth animations on the loading web pages
 
 ## Image of the project
 
